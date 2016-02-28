@@ -1,2 +1,24 @@
-# MaziScript
-A language(?) which enables Novel writers to use scripts in their text and make it easier to write.(Tiankengzhong...)(I'm not good at Englist= =Orz)
+# MaziScript 码字Script
+
+<!--
+<a href="https://github.com/yesterday17/MaziScript/blob/master/README_en.md">[English version click here]</a>
+-->
+
+<p>
+话说某昨读完龙书第三章之后心血来潮觉得自己当年那个用程序写小说的心愿可以实现了Orz于是便开始了作死的旅程~
+
+<br /><br />
+咳咳……其实这门语言也不是那么难的东西啦~现在正在想的东西是语言的规范以及允许的语句。因为是小说作者用的语言，所以也难不到哪里去；因为可能作为科创的课题所以某昨也就能够有动力把这本简直不是人看的龙书给啃完啦~（是不是应该欢呼一下\(^o^)/~）
+
+<br /><br />
+初步计划下的这门语言将要实现的最主要功能是实现技术流小说的自动计数。攻击**防御**闪避**作者你每次写个小说都拿个计算器出来乱按你不烦吗O(∩_∩)O~，这种事情让程序来做不就行了吗^_^
+
+<br /><br />
+因为输出的不是目标文件而是小说的文字，所以这个程序虽然用到了龙书里的知识但是却并不需要优化等等的内容，所以只要完成词法分析和语法语义分析之后就能够完成。
+
+<br /><br />
+当然，如果要搭配上别的程序构成完整的Mazi IDE（这心够大的），那么输出的内容便不能是纯粹的文字了，或者说是要输出文字必须要加上一定的参数。输出的文件就应该是一个二进制文件（*.ma），里面包含一些辅助IDE的数据供IDE调用；或者直接输出多个文件……这方面的内容还没想好( ⊙ o ⊙ )
+</p>
+
+最后欢迎关注某昨在主页上开出的大坑~
+<a href="http://maziscript.yesterday17.cn/">点我传送门~</a>
