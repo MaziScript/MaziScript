@@ -1,8 +1,20 @@
-#include "Headers/inc.h"
+#include "Headers/Base.h"
+#include "Headers/IO.h"
+#include "Headers/Words.h"
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace MZScript;
+using namespace std;
 
 int main(int argc, char** argv) {
-	MZScript::IO::test();
+	/* Format: 
+	 * mzscript -c
+	 */
+	
+	if(argc = 1) ;
+	else{
+		if(argv[1] == "-c") Base::Comp(argv[2]);
+	}
+	
+	
 	return 0;
 }

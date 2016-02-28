@@ -1,25 +1,31 @@
 #include "inc.h"
+//using namespace std;
+using std::ifstream;
+using std::ofstream;
+using std::cout;
 
 namespace MZScript{
 	namespace IO{
-		string input(string _File){
+		std::string input(std::string _File){
 			ifstream ifs;
-			ifs.open(_File, iosbase::in);
+			ifs.open(_File.c_str());
+			if(!ifs.good()) return NULL;
 			
-			string str = NULL''
-			ifs >> str;
+			char c;
+			std::string ans;
+			while(!ifs.eof()){
+				ifs >> c;
+				ans += c;
+			}
 			ifs.close();
-			return str;
+			return ans.substr(0, ans.length()-1);
 		}
 	
-		bool output(string _File, string _str){
-			try{
-				ofstream ofs;
-				ofs.open(_File, ios_base::out);
-				
-				ofs << _str;
-			}
-			catch{ofs.close();return false;}
+		bool output(std::string _File, std::string _str){
+			ofstream ofs;
+			ofs.open(_File.c_str());
+			
+			ofs << _str;
 			
 			ofs.close();
 			return true;
