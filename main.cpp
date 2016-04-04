@@ -5,16 +5,25 @@
 using namespace MZScript;
 using namespace std;
 
+/*
+ * MaziScript Complier
+ * Format:
+ 		mazi FileName(.mazi) [-c] [-t]
+ * -c Output the whole novel document(*.txt)
+ * -t Output temp file.(if -c doesn't exist, it won't work.)
+*/ 
+
 int main(int argc, char** argv) {
-	/* Format: 
-	 * mzscript -c
-	 */
-	
-	if(argc = 1) ;
-	else{
-		if(argv[1] == "-c") Base::Comp(argv[2]);
+	if(argc == 1) {
+		cout << desc;
 	}
-	
+	else{	
+		string _fileName = argv[1];
+		IO::mzFile x = IO::input(_fileName);
+		
+		if(!x.exist)cout<<"File doesn't exist!";
+		cout << x.content;
+	}
 	
 	return 0;
 }
